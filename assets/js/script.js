@@ -1,3 +1,11 @@
+document.addEventListener('DOMContentLoaded', function() {
+    window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: 'smooth'
+    });
+});
+
 const originalTitle = document.title;
 
 window.addEventListener('blur', () => {
@@ -56,6 +64,23 @@ document.addEventListener('DOMContentLoaded', () => {
     homeLeft.appendChild(secondTitle);
     homeLeft.appendChild(intro);
     homeLeft.appendChild(iconsContainer);
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+    const app = document.getElementById('aboutLeft');
+
+    const subTitleAbout = document.createElement('h2');
+    subTitleAbout.textContent = 'SOBRE MIM';
+
+    const introAbout = document.createElement('p');
+    introAbout.textContent = 'Olá, eu sou Ghianluca Ribeiro, tenho 23 anos e faço faculdade de Ciência da Computação, além de um curso de especialização em Backend Java na EBAC. Gosto muito de desenvolver soluções complexas e escaláveis. Sou fundador da Coderix, um grupo de desenvolvimento de software que transforma ideias em soluções digitais para melhorar a vida dos nossos usuários.';
+
+    const buttonAbout = document.createElement('button');
+    buttonAbout.textContent = 'ENTRE EM CONTATO';
+
+    aboutLeft.appendChild(subTitleAbout);
+    aboutLeft.appendChild(introAbout);
+    aboutLeft.appendChild(buttonAbout);
 });
 
 document.addEventListener('DOMContentLoaded', () => {
