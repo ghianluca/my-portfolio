@@ -16,13 +16,14 @@ window.addEventListener('focus', () => {
 });
 
 document.addEventListener('DOMContentLoaded', () => {
-    const app = document.getElementById('appHeader');
+    const appHeader = document.getElementById('appHeader');
 
-    const logoHeader = document.createElement('label');
-    logoHeader.textContent = 'Ghianluca';
+    const logoHeader = document.createElement('img');
+    logoHeader.src = '/assets/images/logo-coderix.svg';
 
     appHeader.appendChild(logoHeader);
 });
+
 
 document.addEventListener('DOMContentLoaded', () => {
     const app = document.getElementById('homeLeft');
